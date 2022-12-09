@@ -1,41 +1,28 @@
 #include <stdio.h>
 
 /**
- * main - Prints 0 to 99
+ * main - Prints combination of numbers
  * Return: Always 0
  */
 int main(void)
 {
-	int b, a, s, e;
+	int num1, num2;
 
-	for (b = 48; b <= 57; b++)
+	for (num1 = 0; num1 <= 98; num1++)
 	{
-		for (a = 48; a <= 57; a++)
+		for (num2 = num1 + 1; num2 <= 99; num2++)
 		{
-			for (s = 48; s <= 57; s++)
-			{
-				for (e = 48; e <= 57; e++)
-				{
-					if (((s + e) > (b + a) && e >= b) || b < s)
-					{
-						putchar(b);
-						putchar(a);
-						putchar(' ');
-						putchar(s);
-						putchar(e);
+			putchar((num1 / 10) + '0');
+			putchar((num1 % 10) + '0');
+			putchar(' ');
+			putchar((num2 / 10) + '0');
+			putchar((num2 % 10) + '0');
 
-						if (b + a + s + e == 227 && b == 57)
-						{
-							break;
-						}
-						else
-						{
-							putchar(',');
-							putchar(' ');
-						}
-					}
-				}
-			}
+			if (num1 == 98 && num2 == 99)
+				continue;
+
+			putchar(',');
+			putchar(' ');
 		}
 	}
 
