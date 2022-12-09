@@ -6,13 +6,17 @@
  */
 int main(void)
 {
-	char ol;
+	char v;
 
-	for (ol = 'a'; ol 'z'; ol++)
-		putchar(ol);
+	for (v = 'a'; v <= 'z'; v++)
+	{
+		putchar(v);
+	}
 
-	for (ol = 'A'; ol <= 'Z'; ol++)
-		putchar(ch);
+	for (v = 'A'; v <= 'Z'; v++)
+	{
+		putchar(v);
+	}
 
 	putchar('\n');
 
