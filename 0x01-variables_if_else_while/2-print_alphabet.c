@@ -6,12 +6,11 @@
  */
 int main(void)
 {
-	char lc;
+	char l;
 
-	for (lc = 'a'; lc <= 'z'; lc++)
-	{
-		putchar(lc);
-	}
+	for (l = 'a'; l <= 'z'; l++)
+		putchar(l);
+
 	putchar('\n');
 	return (0);
-
+}
